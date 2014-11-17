@@ -1,0 +1,133 @@
+
+header {
+    background: #c0c0c0;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+section#container {
+    padding-bottom: 1em;
+}
+
+section#container > section  {
+    display: inline-block;
+    min-height: 300px;
+    position: relative;
+    vertical-align: top;
+    width: 55%;
+}
+
+section#container > section#perfil  {
+    padding-left: 2em;
+    text-align: justify;
+    text-indent: 1em;
+    z-index: 3;
+}
+
+section#container > section#foto {
+    background: url("img/Arte.png") 70% no-repeat;
+    margin-top: 1em;
+    margin-left: 3em;
+    width: 400px;
+    height: 400px;
+    z-index: 5;
+}
+
+section#container > section#foto > figure > img#foto-perfil {
+    border-radius: 200px 100px 200px 100px ;
+    position: absolute;
+    right: 7em;
+    top: 2em;
+    width: 50%;
+}
+
+h3 {
+    text-indent: 0;
+}
+
+section#resumen {
+    right: 2em;
+    position: absolute;
+    text-align: justify;
+    text-indent: 1em;
+    width: 50%;
+    z-index: 3;
+}
+
+nav > ul{
+    background: lightsteelblue;
+    bottom: -25px;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+
+nav > ul > li > a {
+    color: #000000;
+    display: inline-block;
+    float: left;
+    height: 2em;
+    margin-left: 3%;
+    padding: .5em .2em 0 .2em;
+    text-align: center;
+    text-decoration: none;
+    width: 15%;
+    -webkit-transition: all .5s ease-in;
+    -moz-transition: all .5s ease-in;
+    -ms-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+nav > ul > li > a:hover {
+    background: cornflowerblue;
+    color: white;
+    -webkit-transform: translateY(-.5em);
+    -moz-transform: translateY(-.5em);
+    -ms-transform: translateY(-.5em);
+    -o-transform: translateY(-.5em);
+    transform: translateY(-.5em);
+    border-radius: 2em 2em 0em 0em;
+    height: 2em;
+}
+
+
+/*CCS3Art*/
+section#fondo-resumen {
+
+}
+section#fondo-resumen > section#fondo {
+    border-bottom: 300px solid #c0c0c0;
+    position: absolute;
+    bottom: -150px;
+    width: 100%;
+}
+
+section#fondo-resumen > section#fondo:after {
+    background: #c0c0c0;
+    border-radius: 50%;
+    content: '';
+    height: 400px;
+    left: 0px;
+    position: absolute;
+    top: -200px;
+    width: 50%;
+    z-index: 0;
+}
+
+section#fondo-resumen > section#fondo:before {
+    background: white;
+    border-radius: 50%;
+    content: '';
+    height: 400px;
+    left: 50%;
+    position: absolute;
+    top: -200px;
+    width: 50%;
+    z-index: 2;
+}
+
+
